@@ -11,7 +11,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         contact: resolve(__dirname, 'contact/index.html'),
         services: resolve(__dirname, 'services/index.html'),
-        membership: resolve(__dirname, 'membership/index.html')
+        membership: resolve(__dirname, 'membership/index.html'),
+        forms: resolve(__dirname, 'forms/index.html')
       }
     }
   },

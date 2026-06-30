@@ -2075,6 +2075,77 @@ ul, ol {
 }
 
 /* ============================================
+   FORMS PAGE
+   ============================================ */
+.forms-page {
+  padding: calc(var(--space-5xl) + var(--space-4xl)) 0 var(--space-5xl);
+  background: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.forms-page__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--white);
+  padding: var(--space-4xl) var(--space-3xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--warm-200);
+}
+
+.forms-page__headline {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-4xl);
+  color: var(--text-primary);
+  margin-bottom: var(--space-xl);
+}
+
+.forms-page__copy {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-2xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.forms-page__note {
+  background: var(--warm-50);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-accent);
+  font-size: var(--text-base);
+  color: var(--gold-700);
+  margin-bottom: var(--space-3xl);
+  border: 1px dashed var(--gold-300);
+}
+
+.forms-page__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .forms-page__inner {
+    padding: var(--space-3xl) var(--space-xl);
+  }
+  .forms-page__headline {
+    font-size: var(--text-3xl);
+  }
+  .forms-page__buttons {
+    flex-direction: column;
+  }
+}
+
+/* ============================================
    RESPONSIVE — TABLET
    ============================================ */
 @media (max-width: 1024px) {
