@@ -413,7 +413,7 @@ ul, ol {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: var(--space-md) 0;
+  padding: var(--space-lg) 0;
   background: #13293D;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   transition: all var(--duration-base) var(--ease-out);
@@ -436,7 +436,7 @@ ul, ol {
 }
 
 .nav__logo-img {
-  height: 48px;
+  height: 72px;
   width: auto;
   object-fit: contain;
 }
@@ -450,7 +450,7 @@ ul, ol {
 .nav__link {
   font-family: var(--font-accent);
   font-weight: 400;
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: rgba(255, 255, 255, 0.85);
   letter-spacing: 0.02em;
   position: relative;
@@ -477,8 +477,8 @@ ul, ol {
 }
 
 .nav__cta {
-  padding: 0.6rem 1.5rem;
-  font-size: var(--text-xs);
+  padding: 0.7rem 1.8rem;
+  font-size: var(--text-sm);
 }
 
 .nav__mobile-toggle {
