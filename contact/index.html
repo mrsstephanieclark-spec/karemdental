@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Karem Dental & Aesthetics</title>
+  <meta name="description" content="Contact Karem Dental & Aesthetics in Shelbyville, KY. Get in touch to schedule your boutique dental or aesthetic appointment today.">
+  <meta name="theme-color" content="#c5a55a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us | Karem Dental & Aesthetics">
+  <meta property="og:description" content="Get in touch with Karem Dental & Aesthetics in the heart of Shelbyville, KY.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav class="nav nav--scrolled" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo" aria-label="Karem Dental & Aesthetics — Home">
+        <span class="nav__logo-name">Karem Dental</span>
+        <span class="nav__logo-tagline">& Aesthetics</span>
+      </a>
+
+      <div class="nav__mobile-overlay" aria-hidden="true"></div>
+
+      <div class="nav__links" id="nav-links">
+        <a href="/#about" class="nav__link">About</a>
+        <a href="/#services" class="nav__link">Services</a>
+        <a href="/#membership" class="nav__link">Membership</a>
+        <a href="/#testimonials" class="nav__link">Reviews</a>
+        <a href="/contact/" class="nav__link">Contact</a>
+        <a href="/contact/" class="btn btn--primary nav__cta" id="nav-book-btn">Book Now</a>
+      </div>
+
+      <button class="nav__mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== CONTACT PAGE ======================== -->
+  <main class="contact-page">
+    <div class="container">
+      <div class="contact-page__header reveal">
+        <div class="contact-page__accent" aria-hidden="true"></div>
+        <span class="section-label">Get in Touch</span>
+        <h1 class="heading-section">Contact Us</h1>
+      </div>
+
+      <div class="contact-page__grid">
+        <!-- Address -->
+        <div class="contact-info reveal-left">
+          <h2 class="contact-info__heading">Our Address</h2>
+          <div class="contact-info__content">
+            <p>627 Washington St.<br>Shelbyville, KY 40065</p>
+            <p>
+              Telephone: <a href="tel:5026333735">502-633-3735</a><br>
+              FAX: <a href="fax:5026333737">502-633-3737</a><br>
+              Email: <a href="mailto:admin@karemdental.com">admin@karemdental.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="contact-page__divider reveal"></div>
+
+        <!-- Hours -->
+        <div class="contact-info reveal-right">
+          <h2 class="contact-info__heading">Our Hours</h2>
+          <div class="contact-info__content">
+            <p>Monday 8:30 - 5:30</p>
+            <p>Tuesday 7:15 - 6:15</p>
+            <p>Thursday 8:15 - 3:15</p>
+            <p>Friday 7:15 - 1:15</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form reveal">
+        <form action="#" method="POST" id="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" name="name" class="form-input" required aria-required="true" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" required aria-required="true" placeholder="jane@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(502) 555-0123">
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" required aria-required="true" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--dark form-submit">Book Your Appointment Today</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__logo">Karem Dental & Aesthetics</div>
+      <div class="footer__links">
+        <a href="#" class="footer__link">Privacy Policy</a>
+        <a href="#" class="footer__link">Accessibility</a>
+        <a href="#" class="footer__link">Sitemap</a>
+      </div>
+      <p class="footer__text">© 2026 Karem Dental & Aesthetics. All rights reserved.</p>
+      <p class="footer__text">627 Washington St., Shelbyville, KY 40065 · 502-633-3735</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="../app.js"></script>
+</body>
+</html>

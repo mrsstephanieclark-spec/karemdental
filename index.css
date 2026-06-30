@@ -1543,6 +1543,141 @@ ul, ol {
 }
 
 /* ============================================
+   CONTACT PAGE
+   ============================================ */
+.contact-page {
+  padding: calc(var(--space-5xl) + var(--space-3xl)) 0 var(--space-5xl);
+  background: var(--cream);
+  min-height: 100vh;
+}
+
+.contact-page__header {
+  text-align: center;
+  margin-bottom: var(--space-4xl);
+}
+
+.contact-page__accent {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold-400);
+  margin: 0 auto var(--space-lg);
+}
+
+.contact-page__grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: var(--space-3xl);
+  max-width: 1000px;
+  margin: 0 auto var(--space-4xl);
+}
+
+.contact-page__divider {
+  background: var(--warm-200);
+  width: 1px;
+  height: 100%;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info__heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-2xl);
+  color: var(--text-primary);
+  margin-bottom: var(--space-xl);
+}
+
+.contact-info__content {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 2;
+}
+
+.contact-info__content a {
+  color: var(--gold-700);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.contact-info__content a:hover {
+  color: var(--gold-500);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: var(--space-3xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--warm-200);
+}
+
+.form-group {
+  margin-bottom: var(--space-lg);
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-accent);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--warm-50);
+  border: 1px solid var(--warm-200);
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--gold-400);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(197, 165, 90, 0.15);
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .contact-page__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+  .contact-page__divider {
+    display: none;
+  }
+  .contact-page {
+    padding-top: calc(var(--space-5xl) + var(--space-2xl));
+  }
+  .contact-form {
+    padding: var(--space-xl);
+  }
+}
+
+/* ============================================
    RESPONSIVE — TABLET
    ============================================ */
 @media (max-width: 1024px) {
