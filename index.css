@@ -435,34 +435,10 @@ ul, ol {
   gap: var(--space-sm);
 }
 
-.nav__logomark {
-  width: 40px;
-  height: 40px;
+.nav__logo-img {
+  height: 48px;
+  width: auto;
   object-fit: contain;
-}
-
-.nav__logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-
-.nav__logo-name {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: var(--text-xl);
-  color: var(--white);
-  transition: color var(--duration-base) var(--ease-out);
-}
-
-.nav__logo-tagline {
-  font-family: var(--font-accent);
-  font-weight: 400;
-  font-size: var(--text-xs);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
-  transition: color var(--duration-base) var(--ease-out);
 }
 
 .nav__links {
@@ -1460,21 +1436,10 @@ ul, ol {
   gap: var(--space-xl);
 }
 
-.footer__logomark-wrapper {
-  margin-bottom: var(--space-sm);
-}
-
-.footer__logomark {
-  width: 70px;
-  height: 70px;
+.footer__logo-img {
+  height: 80px;
+  width: auto;
   object-fit: contain;
-}
-
-.footer__logo {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: var(--text-lg);
-  color: var(--white);
 }
 
 .footer__text {
