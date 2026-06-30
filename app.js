@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonialCarousel();
   initSmoothScroll();
   initModals();
+  initFAQ();
 });
 
 /* ---------- Navigation ---------- */
@@ -319,6 +320,43 @@ function initModals() {
           }
         }
       }
+    }
+  });
+}
+
+/* ---------- FAQ Accordion ---------- */
+function initFAQ() {
+  const faqItems = document.querySelectorAll('.faq__item');
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq__question');
+    const answer = item.querySelector('.faq__answer');
+    
+    if (question && answer) {
+      question.addEventListener('click', () => {
+        const isExpanded = question.getAttribute('aria-expanded') === 'true';
+        
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            const otherQuestion = otherItem.querySelector('.faq__question');
+            const otherAnswer = otherItem.querySelector('.faq__answer');
+            if (otherQuestion && otherAnswer) {
+              otherQuestion.setAttribute('aria-expanded', 'false');
+              otherAnswer.style.maxHeight = null;
+            }
+          }
+        });
+        
+        // Toggle current item
+        if (isExpanded) {
+          question.setAttribute('aria-expanded', 'false');
+          answer.style.maxHeight = null;
+        } else {
+          question.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
     }
   });
 }
