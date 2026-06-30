@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comprehensive dental and aesthetic services at Karem Dental & Aesthetics in Shelbyville, KY. From routine cleanings to full-face aesthetics." />
+  <title>Our Services | Karem Dental & Aesthetics</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav class="nav nav--scrolled" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo" aria-label="Karem Dental & Aesthetics — Home">
+        <img src="../images/logo.png" alt="Karem Dental & Aesthetics Logo" class="nav__logo-img">
+      </a>
+
+      <div class="nav__mobile-overlay" aria-hidden="true"></div>
+
+      <div class="nav__links" id="nav-links">
+        <a href="/#about" class="nav__link">About</a>
+        <a href="/services/" class="nav__link">Services</a>
+        <a href="/#membership" class="nav__link">Membership</a>
+        <a href="/#testimonials" class="nav__link">Reviews</a>
+        <a href="/contact/" class="nav__link">Contact</a>
+        <a href="/contact/" class="btn btn--primary nav__cta" id="nav-book-btn">Book Now</a>
+      </div>
+
+      <button class="nav__mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="services-hero reveal">
+    <div class="container">
+      <h1 class="services-hero__headline">Comprehensive Care<br>for Your Smile & Beyond.</h1>
+      <p class="services-hero__subheadline">From routine cleanings to full-face aesthetics — we do it all, right here in Shelbyville.</p>
+    </div>
+  </section>
+
+  <!-- ======================== SERVICES GRID ======================== -->
+  <section class="services-page-grid">
+    <div class="container">
+      <div class="services__grid stagger-children">
+        
+        <!-- Category 1 -->
+        <button class="service-card reveal modal-trigger" data-modal="modal-preventive" aria-label="Learn more about Preventive & General Dentistry">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="service-card__title">Preventive &<br>General Dentistry</h3>
+          <p class="service-card__desc">Keep your smile healthy.</p>
+          <span class="service-card__link">Learn More</span>
+        </button>
+
+        <!-- Category 2 -->
+        <button class="service-card reveal modal-trigger" data-modal="modal-restorative" aria-label="Learn more about Restorative Dentistry">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <h3 class="service-card__title">Restorative<br>Dentistry</h3>
+          <p class="service-card__desc">Restore. Rebuild. Renew.</p>
+          <span class="service-card__link">Learn More</span>
+        </button>
+
+        <!-- Category 3 -->
+        <button class="service-card reveal modal-trigger" data-modal="modal-cosmetic" aria-label="Learn more about Cosmetic Dentistry">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+          </div>
+          <h3 class="service-card__title">Cosmetic<br>Dentistry</h3>
+          <p class="service-card__desc">Your dream smile is closer than you think.</p>
+          <span class="service-card__link">Learn More</span>
+        </button>
+
+        <!-- Category 4 -->
+        <button class="service-card reveal modal-trigger" data-modal="modal-advanced" aria-label="Learn more about Advanced & Specialty Services">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3 class="service-card__title">Advanced &<br>Specialty Services</h3>
+          <p class="service-card__desc">Modern dentistry, advanced solutions.</p>
+          <span class="service-card__link">Learn More</span>
+        </button>
+
+        <!-- Category 5 -->
+        <button class="service-card reveal modal-trigger" data-modal="modal-aesthetics" aria-label="Learn more about Aesthetics & Injectables">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 2a10 10 0 1 1-10 10h10V2z"></path><circle cx="12" cy="12" r="2"></circle></svg>
+          </div>
+          <h3 class="service-card__title">Aesthetics &<br>Injectables</h3>
+          <p class="service-card__desc">Beauty beyond the smile.</p>
+          <span class="service-card__link">Learn More</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <section class="cta reveal">
+    <div class="container cta__inner">
+      <h2 class="heading-section cta__headline">Ready for a smile you love?</h2>
+      <p class="body-text cta__text">
+        Experience boutique dental care that puts you first.
+      </p>
+      <div class="reveal">
+        <a href="/contact/" class="btn btn--dark btn--large" id="final-book-btn">Book Your Appointment Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <img src="../images/logo.png" alt="Karem Dental & Aesthetics Logo" class="footer__logo-img">
+      <div class="footer__links">
+        <a href="#" class="footer__link">Privacy Policy</a>
+        <a href="#" class="footer__link">Accessibility</a>
+        <a href="/services/" class="footer__link">Services</a>
+        <a href="/contact/" class="footer__link">Contact</a>
+      </div>
+      <p class="footer__text">
+        © 2026 Karem Dental & Aesthetics. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ======================== MODALS ======================== -->
+  
+  <!-- Preventive Modal -->
+  <div class="modal-overlay" id="modal-preventive" role="dialog" aria-modal="true" aria-labelledby="modal-prev-title">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__content">
+        <h2 class="modal__headline" id="modal-prev-title">PREVENTIVE & GENERAL DENTISTRY<br><span style="font-size: var(--text-lg); color: var(--gold-600); font-family: var(--font-accent); font-weight: 400; display: block; margin-top: var(--space-sm);">"Keep Your Smile Healthy."</span></h2>
+        <div class="modal__services-list">
+          <div class="modal__service">
+            <h3 class="modal__service-title">Routine Dental Exams</h3>
+            <p class="modal__service-desc">Regular checkups are the foundation of a healthy smile. We recommend visits every 6 months to catch small issues before they become big ones.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Dental Cleanings</h3>
+            <p class="modal__service-desc">Our hygienists provide thorough, comfortable cleanings that leave your teeth feeling fresh and your gums healthy.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Dental X-Rays</h3>
+            <p class="modal__service-desc">Digital X-rays give us a complete picture of your oral health with minimal radiation exposure.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Gum Health (Periodontal Care)</h3>
+            <p class="modal__service-desc">Healthy gums are the foundation of a healthy mouth. We treat all stages of gum disease with precision and care.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Pediatric Dentistry</h3>
+            <p class="modal__service-desc">We love seeing kids! Dr. Karem has experience with patients as young as 3. We make dental visits fun, not frightening.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Restorative Modal -->
+  <div class="modal-overlay" id="modal-restorative" role="dialog" aria-modal="true" aria-labelledby="modal-rest-title">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__content">
+        <h2 class="modal__headline" id="modal-rest-title">RESTORATIVE DENTISTRY<br><span style="font-size: var(--text-lg); color: var(--gold-600); font-family: var(--font-accent); font-weight: 400; display: block; margin-top: var(--space-sm);">"Restore. Rebuild. Renew."</span></h2>
+        <div class="modal__services-list">
+          <div class="modal__service">
+            <h3 class="modal__service-title">Tooth Fillings</h3>
+            <p class="modal__service-desc">Tooth-colored composite fillings that blend seamlessly with your natural teeth.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Crowns & Bridges</h3>
+            <p class="modal__service-desc">Strong, natural-looking restorations that protect damaged teeth and fill gaps.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Replacing Missing Teeth</h3>
+            <p class="modal__service-desc">Options including implants, bridges, and dentures to restore your complete smile.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Oral Surgery</h3>
+            <p class="modal__service-desc">Extractions and minor surgical procedures performed with care and precision in our office.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Emergency Dental Care</h3>
+            <p class="modal__service-desc">Dental emergencies don't wait. We prioritize urgent care so you're never left in pain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cosmetic Modal -->
+  <div class="modal-overlay" id="modal-cosmetic" role="dialog" aria-modal="true" aria-labelledby="modal-cosmetic-title">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__content">
+        <h2 class="modal__headline" id="modal-cosmetic-title">COSMETIC DENTISTRY<br><span style="font-size: var(--text-lg); color: var(--gold-600); font-family: var(--font-accent); font-weight: 400; display: block; margin-top: var(--space-sm);">"Your Dream Smile is Closer Than You Think."</span></h2>
+        <div class="modal__services-list">
+          <div class="modal__service">
+            <h3 class="modal__service-title">Teeth Whitening</h3>
+            <p class="modal__service-desc">Professional-grade whitening that's faster, safer, and more effective than over-the-counter options.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Veneers & Bonding</h3>
+            <p class="modal__service-desc">Transform chipped, stained, or uneven teeth with porcelain veneers or composite bonding.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Smile Design</h3>
+            <p class="modal__service-desc">A comprehensive approach to redesigning your entire smile for stunning, natural-looking results.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Orthodontics</h3>
+            <p class="modal__service-desc">Clear aligner therapy to straighten teeth discreetly at any age.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Advanced Modal -->
+  <div class="modal-overlay" id="modal-advanced" role="dialog" aria-modal="true" aria-labelledby="modal-adv-title">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__content">
+        <h2 class="modal__headline" id="modal-adv-title">ADVANCED & SPECIALTY SERVICES<br><span style="font-size: var(--text-lg); color: var(--gold-600); font-family: var(--font-accent); font-weight: 400; display: block; margin-top: var(--space-sm);">"Modern Dentistry, Advanced Solutions."</span></h2>
+        <div class="modal__services-list">
+          <div class="modal__service">
+            <h3 class="modal__service-title">Laser Dentistry</h3>
+            <p class="modal__service-desc">Minimally invasive laser treatments for faster healing, less discomfort, and greater precision.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Stress-Free Dentistry</h3>
+            <p class="modal__service-desc">Dental anxiety is real. We offer sedation options and a calming environment so you can relax in the chair.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Night Guards & Sports Guards</h3>
+            <p class="modal__service-desc">Custom-fitted guards to protect your teeth from grinding and athletic impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aesthetics Modal -->
+  <div class="modal-overlay" id="modal-aesthetics" role="dialog" aria-modal="true" aria-labelledby="modal-aes-title">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__content">
+        <h2 class="modal__headline" id="modal-aes-title">AESTHETICS & INJECTABLES<br><span style="font-size: var(--text-lg); color: var(--gold-600); font-family: var(--font-accent); font-weight: 400; display: block; margin-top: var(--space-sm);">"Beauty Beyond the Smile."</span></h2>
+        <div class="modal__services-list">
+          <div class="modal__service">
+            <h3 class="modal__service-title">Botox & Injectables</h3>
+            <p class="modal__service-desc">Smooth fine lines and wrinkles with expertly administered Botox and dermal fillers. Dr. Karem is a trained provider through KAMAP.</p>
+          </div>
+          <div class="modal__service">
+            <h3 class="modal__service-title">Microneedling</h3>
+            <p class="modal__service-desc">Stimulate collagen production for firmer, more radiant skin. A non-invasive path to a refreshed complexion.</p>
+          </div>
+        </div>
+        <p class="modal__disclaimer">Injectable and aesthetic services are elective and are not covered under membership plans.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../app.js"></script>
+</body>
+</html>
