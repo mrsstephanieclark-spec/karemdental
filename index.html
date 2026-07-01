@@ -81,11 +81,19 @@
   <!-- ======================== HERO ======================== -->
   <section class="hero" id="hero" aria-labelledby="hero-headline">
     <div class="hero__bg">
-      <img src="images/hero-bg.png"
-           alt="Warm, modern dental practice interior with natural light and luxury finishes"
-           loading="eager"
-           fetchpriority="high"
-           width="1920" height="1080">
+      <video class="hero__video"
+             autoplay
+             loop
+             muted
+             playsinline
+             preload="auto"
+             poster="images/hero-bg.png"
+             aria-hidden="true">
+        <source src="images/hero-video.mov" type="video/quicktime">
+        <img src="images/hero-bg.png"
+             alt="Warm, modern dental practice interior"
+             width="1920" height="1080">
+      </video>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__warm-tint" aria-hidden="true"></div>
